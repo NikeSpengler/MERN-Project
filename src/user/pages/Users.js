@@ -7,7 +7,7 @@ const Users = () => {
         {
             id: 'u1', 
             name: 'Nike Spengler', 
-            image: 'https://besthqwallpapers.com/sv/djur/s%C3%B6ta-djur-gris-g%C3%A5rd-lilla-grisen-grisar-4004', 
+            image: '', 
             places: 3 
         }
     ];

@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import PlaceList from '../components/PlaceList';
 
+
 const DUMMY_PLACES = [
     {
         id:'p1',
@@ -17,8 +18,8 @@ const DUMMY_PLACES = [
     },
     {
         id:'p2',
-        title: 'Kolbäcksgränd 3',
-        description: 'One of the most beautiful houses',
+        title: 'Kolbäckgränd 6',
+        description: 'Beautiful house',
         imageUrl: 'https://www.brffriheten.se/wp-content/uploads/Kolbacksgrand-flygbild.jpg',
         address: 'Kolbäcksgränd, 128 46 Bagarmossen, Sverige',
         location: {
@@ -29,7 +30,7 @@ const DUMMY_PLACES = [
     }
 ];
 
-const UserPlaces =() => {
+const UserPlaces = () => {
     const userId = useParams().userId;
     const loadedPlaces = DUMMY_PLACES.filter(place => place.creator === userId);
     
